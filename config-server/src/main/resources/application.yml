@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/GoneAsWindy/SpirngCloudConfig
+          search-paths: config-repo
+          username:
+          password:
+      label: master
+
+server:
+  port: 8888
